@@ -1,4 +1,4 @@
-* {
+body{
   padding: 0px;
   margin: 0px;
   font-family: "Lato", sans-serif;
@@ -17,6 +17,7 @@ nav {
 .search {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: gray;
   padding: 10px 20px;
   border-radius: 10px;
@@ -24,6 +25,7 @@ nav {
 .searchInput {
   border: none;
   background-color: transparent;
+  justify-content: top;
 }
 .searchInput::placeholder {
   color: lightgray;
@@ -48,8 +50,7 @@ nav {
 .slider {
   margin: 20px;
 }
-body {
-  background-image: url(./background\ 2jpg.jpg);
-  background-repeat: no-repeat;
-  color: #fff;
+.sliderItem{
+   display: flex;
+   align-items: center;
 }
