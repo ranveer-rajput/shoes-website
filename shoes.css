@@ -47,10 +47,13 @@ nav {
   font-weight: 400;
   border-bottom: 2px solid rgb(15, 48, 45);
 }
-.slider {
-  margin: 20px;
+.slider{
+
+  background-color: aquamarine;
+  background: url(clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
-.sliderItem{
-   display: flex;
-   align-items: center;
+
+.sliderWrapper{
+
+  
 }
