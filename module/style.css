@@ -1,0 +1,80 @@
+/* NOTE: Variable deceleration for the website */
+:root {
+  --bg: #f2f2f2;
+  --primary: #3a3845;
+  --sec: #ff6363;
+}
+
+/* NOTE: Styles for all the html elements */
+
+/* ? Styles for the *whole* website */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ? Styles for the body of the website */
+body {
+  background-color: var(--bg);
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"] {
+  background-color: var(--bg);
+  border: none;
+  border-radius: 25px;
+  width: 15vw;
+  height: 5vh;
+  font-weight: 600;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #3a3845;
+  font-weight: 500;
+}
+
+/* NOTE: Styles for the header of the website*/
+
+/* ? Css class for the header parent */
+.headerParent {
+  background: #fff;
+  height: 12vh;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ? Class for the logo of the website */
+.logo {
+  color: var(--primary);
+}
+
+.headerNavItems {
+  width: 30vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.searchField {
+    width: 25vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.searchField i {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.searchField input {
+  padding-left: 40px;
+}
