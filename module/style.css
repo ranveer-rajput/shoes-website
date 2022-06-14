@@ -46,8 +46,8 @@ input[type="text"]::placeholder {
   padding: 20px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center;  /* ! Cross-Axis Alignment */
+  justify-content: space-between;  /* ! Main-Axis Alignment */
 }
 
 /* ? Class for the logo of the website */
@@ -55,13 +55,15 @@ input[type="text"]::placeholder {
   color: var(--primary);
 }
 
+/* ? Class for navigations items on the header */
 .headerNavItems {
   width: 30vw;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-between;   
 }
 
+/* ? Class for the logo of the website */
 .searchField {
     width: 25vw;
     display: flex;
@@ -69,12 +71,14 @@ input[type="text"]::placeholder {
     justify-content: space-between;
 }
 
+/* ? Class for the logo of the website */
 .searchField i {
   position: absolute;
   margin-top: 10px;
   margin-left: 10px;
 }
 
+/* ? Class for the logo of the website */
 .searchField input {
   padding-left: 40px;
 }
