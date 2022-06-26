@@ -2,6 +2,8 @@ body{
   padding: 0px;
   margin: 0px;
   font-family: "Lato", sans-serif;
+  background-color: rgba(212, 31, 70, 0.171);
+  
 }
 
 nav {
@@ -49,11 +51,145 @@ nav {
 }
 .slider{
 
-  background-color: aquamarine;
-  background: url(clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  background-color: #f8750a94;
+  background-size: full;
+  
 }
 
 .sliderWrapper{
+display: flex;
+width: 500vw;
+margin-bottom: 50px;
+transform: all 1s ease-in-out;
 
+
+
+}
+.sliderItem{
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
   
+
+}
+   .slideBg{
+        
+       width: 750px;
+       height: 350px;
+       border-radius: 50%;
+       position: absolute;
+       
+       
+       
+   }
+
+ 
+   .sliderImg{
+     z-index: 1;
+     height: 300px;
+     width: 600px;
+
+     
+
+
+   }
+
+
+
+.sliderTitle{
+  position: absolute ;
+  top: 10%;
+  right: 10%;
+  
+  
+  font-size: 40px;
+  color: rgb(252, 249, 249);
+  font-weight: 900px;
+text-align: center;
+z-index: 1;
+}
+.sliderPrice {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+  
+  color: rgb(14, 13, 13);
+  font-size: 20px;
+  font-weight: 300px;
+  text-align: center;
+  border: 1px solid gray;
+   z-index: 1;
+}
+.buyButton {
+  position: absolute;
+  top: 70%;
+  right: 13%;
+  color: white;
+  font-size: 25px;
+  font-weight: 30px;
+  text-align: center;
+  border: 1px solid gray;
+  z-index: 1;
+  cursor: pointer;
+  background-color: black;
+}
+.buyButton:hover{
+  background-color: white;
+  color: rgb(7, 7, 7);
+
+}
+.sliderItem:nth-child(1) .slideBg{
+
+  background-color: green;
+}
+.sliderItem:nth-child(2) .slideBg {
+
+  background-color: rebeccapurple;
+}
+.sliderItem:nth-child(3) .slideBg {
+
+  background-color: teal;
+}
+.sliderItem:nth-child(4) .slideBg {
+
+  background-color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .slideBg {
+
+  background-color: rgb(124, 115 , 80);
+}
+.features{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+
+}
+.feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+}
+.featureIcon{
+  width: 50px;
+  height: 50px;
+}
+.featureTitle{
+
+  font-size: 20;
+  font-weight: 600;
+  margin: 20px;
+}
+.featureDesc{
+
+  color: gray;
+  width: 50%;
+  height: 100px;
+
 }
