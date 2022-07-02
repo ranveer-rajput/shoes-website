@@ -1,195 +1,204 @@
-body{
-  padding: 0px;
-  margin: 0px;
-  font-family: "Lato", sans-serif;
-  background-color: rgba(212, 31, 70, 0.171);
-  
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    background-color: rgba(212, 31, 70, 0.171);
 }
 
 nav {
-  background-color: rgb(12, 12, 12);
-  color: white;
-  padding: 20px 50px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 20px 50px;
 }
+
 .navTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .search {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: gray;
-  padding: 10px 20px;
-  border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
+
 .searchInput {
-  border: none;
-  background-color: transparent;
-  justify-content: top;
+    border: none;
+    background-color: transparent;
+    justify-content: top;
 }
+
 .searchInput::placeholder {
-  color: lightgray;
+    color: lightgray;
 }
+
 .limitedOffer {
-  font-size: 20px;
-  border-bottom: 2px solid rgb(163, 99, 102);
-  cursor: pointer;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(163, 99, 102);
+    cursor: pointer;
 }
+
 .navBottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .menuItem {
-  margin-right: 40px;
-  cursor: pointer;
-  color: rgb(190, 123, 34);
-  font-weight: 400;
-  border-bottom: 2px solid rgb(15, 48, 45);
-}
-.slider{
-
-  background-color: #f8750a94;
-  background-size: full;
-  
+    margin-right: 40px;
+    cursor: pointer;
+    color: rgb(190, 123, 34);
+    font-weight: 400;
+    border-bottom: 2px solid rgb(15, 48, 45);
 }
 
-.sliderWrapper{
-display: flex;
-width: 500vw;
-margin-bottom: 50px;
-transform: all 1s ease-in-out;
-
-
-
+.slider {
+    background-color: #e9721194;
+    background-size: full;
 }
-.sliderItem{
 
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 100px;
-  
-
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    margin-bottom: 40px;
+    transform: all 1s ease-in-out;
 }
-   .slideBg{
-        
-       width: 750px;
-       height: 350px;
-       border-radius: 50%;
-       position: absolute;
-       
-       
-       
-   }
 
- 
-   .sliderImg{
-     z-index: 1;
-     height: 300px;
-     width: 600px;
-
-     
-
-
-   }
-
-
-
-.sliderTitle{
-  position: absolute ;
-  top: 10%;
-  right: 10%;
-  
-  
-  font-size: 40px;
-  color: rgb(252, 249, 249);
-  font-weight: 900px;
-text-align: center;
-z-index: 1;
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
 }
+
+.slideBg {
+    width: 650px;
+    height: 270px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg {
+    z-index: 1;
+    height: 250px;
+    width: 400px;
+}
+
+.sliderTitle {
+    position: absolute;
+    bottom: 10%;
+    left: 70%;
+    font-size: 40px;
+    color: rgb(252, 249, 249);
+    font-weight: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
 .sliderPrice {
-  position: absolute;
-  top: 6%;
-  left: 20%;
-  
-  color: rgb(14, 13, 13);
-  font-size: 20px;
-  font-weight: 300px;
-  text-align: center;
-  border: 1px solid gray;
-   z-index: 1;
+    position: absolute;
+    top: 6%;
+    left: 20%;
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
 }
+
 .buyButton {
-  position: absolute;
-  top: 70%;
-  right: 13%;
-  color: white;
-  font-size: 25px;
-  font-weight: 30px;
-  text-align: center;
-  border: 1px solid gray;
-  z-index: 1;
-  cursor: pointer;
-  background-color: black;
+    position: absolute;
+    top: 80%;
+    right: 16%;
+    color: white;
+    font-size: 25px;
+    font-weight: 30px;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+    background-color: black;
 }
-.buyButton:hover{
-  background-color: white;
-  color: rgb(7, 7, 7);
 
+.buyButton:hover {
+    background-color: white;
+    color: rgb(7, 7, 7);
 }
-.sliderItem:nth-child(1) .slideBg{
 
-  background-color: green;
+.sliderItem:nth-child(1) .slideBg {
+    background-color: green;
 }
+
 .sliderItem:nth-child(2) .slideBg {
-
-  background-color: rebeccapurple;
+    background-color: rebeccapurple;
 }
+
 .sliderItem:nth-child(3) .slideBg {
-
-  background-color: teal;
+    background-color: teal;
 }
+
 .sliderItem:nth-child(4) .slideBg {
-
-  background-color: cornflowerblue;
+    background-color: cornflowerblue;
 }
+
 .sliderItem:nth-child(5) .slideBg {
-
-  background-color: rgb(124, 115 , 80);
+    background-color: rgb(124, 115, 80);
 }
-.features{
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
 
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.feature{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; 
-}
-.featureIcon{
-  width: 50px;
-  height: 50px;
-}
-.featureTitle{
 
-  font-size: 20;
-  font-weight: 600;
-  margin: 20px;
+.featureIcon {
+    width: 50px;
+    height: 50px;
 }
-.featureDesc{
 
-  color: gray;
-  width: 50%;
-  height: 100px;
-
+.featureTitle {
+    font-size: 20;
+    font-weight: 600;
+    margin: 20px;
 }
+
+.featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.productImg {
+    width: 30%;
+}
+
+.productDetails {
+    position: absolute;
+    top: 1%;
+    right: 20%;
+    width: 40%;
+    padding: 40px;
+}
+
+.productTitle {}
